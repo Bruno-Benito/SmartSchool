@@ -84,6 +84,7 @@ export class AlunosComponent implements OnInit {
 
   public voltar(){
     this.alunoselected == null
+    window.location.reload();
   }
 
   

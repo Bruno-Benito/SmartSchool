@@ -44,18 +44,18 @@ export class ProfessoresComponent implements OnInit {
     this.professorform = this.fb.group({
 
       nome: ['', Validators.required],
-      discplina: ['', Validators.required],
+      disciplina: ['', Validators.required],
     });
   }
   
   
   professores = [
 
-    { id: 1, nome: 'mario', discplina: 'Lingua Inglesa' },
-    { id: 2, nome: 'bola', discplina: 'Historia' },
-    { id: 3, nome: 'nei', discplina: 'Filosofia' },
-    { id: 4, nome: 'luciana', discplina: 'Lingua Portuguesa' },
-    { id: 5, nome: 'brasa', discplina: 'Fisica' },
+    { id: 1, nome: 'mario', disciplina: 'Lingua Inglesa' },
+    { id: 2, nome: 'bola', disciplina: 'Historia' },
+    { id: 3, nome: 'nei', disciplina: 'Filosofia' },
+    { id: 4, nome: 'luciana', disciplina: 'Lingua Portuguesa' },
+    { id: 5, nome: 'brasa', disciplina: 'Fisica' },
 
   ]
     
@@ -68,7 +68,7 @@ export class ProfessoresComponent implements OnInit {
 
   voltar(){
     this.professorselected == null
-   
+    window.location.reload();
   }
  
 
